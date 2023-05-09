@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=""
+    <title>MovieWebsite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo" >MOVIESHUB</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Type</a></li>
+            <li><a href="#">Watchlist</a></li>
+            <li class="ctn" <a href="#"></a>Contact</li>
+        </ul>
+        <img src="menu-btn.png" alt="illa mare" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Watch Movies & Chill</h2>
+            <div class="line"></div>
+            <h1>Entertainment</h1>
+            <a href="#"class="ctn">Movies More</a>
+        </div>
+    </header>
+    
+    <section>
+        <div class="title">
+        <h1 ><a href="#" >MORE MOVIES</a></h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img width="290px" height="380" src="pathaan.jpg" alt="barlilla">
+            <h4>PATHAAN</h4>
+            <p>Pathaan (Khan), an exiled RAW agent, works with ISI agent Rubina Mohsin (Padukone) to take down Jim (Abraham), a former RAW agent planning to spread a deadly lab-generated virus across India.</p>
+        </div>
+        <div class="col">
+            <img  width="290px" height="380"src="kgf2.jpg" alt="barlilla">
+            <h4>KGF2</h4>
+            <p>The blood-soaked land of Kolar Gold Fields has a new overlord now, Rocky, whose name strikes fear in the heart of his foes. His allies look up to him as their Savior, the government sees him as a threat, and his enemies are clamouring for revenge.</p>
+            
+        </div>
+        <div class="col">
+            <img  width="290px" height="380px"src="rrr.jpg" alt="barlilla">
+            <h4>RRR</h4>
+            <p>A fearless revolutionary and an officer in the British force, who once shared a deep bond, decide to join forces and chart out an inspirational path of freedom against the despotic rulers.</p>
+            
+        </div>
+        
+    </div>
+    </section>
+    <script>
+        const menuBtn=document.querySelector('.menu-btn');
+        const navlinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-btn');
+        })
+    </script>
+
+    
+</body>
+</html>
