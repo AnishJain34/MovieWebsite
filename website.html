@@ -26,13 +26,13 @@
             <h2>Watch Movies & Chill</h2>
             <div class="line"></div>
             <h1>Entertainment</h1>
-            <a href="#"class="ctn">Movies More</a>
+            <a href="#link"class="ctn">Movies More</a>
         </div>
     </header>
     
     <section>
         <div class="title">
-        <h1 ><a href="#" >MORE MOVIES</a></h1>
+        <h1 id="link">MORE MOVIES</h1>
         <div class="line"></div>
     </div>
     <div class="row">
@@ -62,7 +62,17 @@
 
         menuBtn.addEventListener('click',()=>{
             navlinks.classList.toggle('mobile-btn');
-        })
+        });
+        let $root = $('html, body');
+      $('a[href^="#"]').click(function() {
+          let href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function() {
+            window.location.hash = href;
+          });
+          return false;
+        });
     </script>
 
     
