@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=""
-    <title>MovieWebsite</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="" <title>MovieWebsite</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <h1 class="logo" >MOVIESHUB</h1>
+        <h1 class="logo">MOVIESHUB</h1>
         <ul class="nav-links">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#link2" class="ctn">About</a></li>
             <li><a href="#">New</a></li>
-            <li><a href="#">Type</a></li>
+            <li>  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Type</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li class="dropdown-item" href="#">Action</li>
+                    <li class="dropdown-item" href="#">Another action</li>
+                    <li  class="dropdown-item" href="#">Something else here</li>
+                </ul></li>
             <li><a href="#">Watchlist</a></li>
             <li class="ctn" <a href="#"></a>Contact</li>
         </ul>
@@ -26,55 +33,82 @@
             <h2>Watch Movies & Chill</h2>
             <div class="line"></div>
             <h1>Entertainment</h1>
-            <a href="#link"class="ctn">Movies More</a>
+            <a href="#link" class="ctn">Movies More</a>
         </div>
     </header>
-    
-    <section>
+
+    <section class="movies">
         <div class="title">
-        <h1 id="link">MORE MOVIES</h1>
-        <div class="line"></div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <img width="290px" height="380" src="pathaan.jpg" alt="barlilla">
-            <h4>PATHAAN</h4>
-            <p>Pathaan (Khan), an exiled RAW agent, works with ISI agent Rubina Mohsin (Padukone) to take down Jim (Abraham), a former RAW agent planning to spread a deadly lab-generated virus across India.</p>
+            <h1 id="link">MORE MOVIES</h1>
+            <div class="line"></div>
         </div>
-        <div class="col">
-            <img  width="290px" height="380"src="kgf2.jpg" alt="barlilla">
-            <h4>KGF2</h4>
-            <p>The blood-soaked land of Kolar Gold Fields has a new overlord now, Rocky, whose name strikes fear in the heart of his foes. His allies look up to him as their Savior, the government sees him as a threat, and his enemies are clamouring for revenge.</p>
-            
+        <div class="row">
+            <div class="col">
+                <img width="290px" height="380" src="pathaan.jpg" alt="barlilla">
+                <h4>PATHAAN</h4>
+                <p>Pathaan (Khan), an exiled RAW agent, works with ISI agent Rubina Mohsin (Padukone) to take down Jim
+                    (Abraham), a former RAW agent planning to spread a deadly lab-generated virus across India.</p>
+            </div>
+            <div class="col">
+                <img width="290px" height="380" src="kgf2.jpg" alt="barlilla">
+                <h4>KGF2</h4>
+                <p>The blood-soaked land of Kolar Gold Fields has a new overlord now, Rocky, whose name strikes fear in
+                    the heart of his foes. His allies look up to him as their Savior, the government sees him as a
+                    threat, and his enemies are clamouring for revenge.</p>
+
+            </div>
+            <div class="col">
+                <img width="290px" height="380px" src="rrr.jpg" alt="barlilla">
+                <h4>RRR</h4>
+                <p>A fearless revolutionary and an officer in the British force, who once shared a deep bond, decide to
+                    join forces and chart out an inspirational path of freedom against the despotic rulers.</p>
+
+            </div>
+
         </div>
-        <div class="col">
-            <img  width="290px" height="380px"src="rrr.jpg" alt="barlilla">
-            <h4>RRR</h4>
-            <p>A fearless revolutionary and an officer in the British force, who once shared a deep bond, decide to join forces and chart out an inspirational path of freedom against the despotic rulers.</p>
-            
-        </div>
-        
-    </div>
+    </section>
+    <section class="">
+        <h2>New Movies Released</h2>
+
+    </section>
+
+    <section class="about-us">
+        <div class="about">
+            <img src="boy.jpg" alt="illa mare" class="pic">
+            <div class="text">
+                <h2 id="link2">About Us</h2>
+                <div class="line"></div>
+                <h5>Front-end Developer&<span>Editor</span></h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam, quaerat quas sunt accusamus
+                    voluptate sapiente aspernatur laboriosam doloribus deleniti eveniet ab unde eos delectus rem!
+                    Doloremque eveniet officia amet voluptatum aut est ad.
+                </p>
+                <div class="data">
+                    <a href="#" class="connect">ContactMe</a>
+                </div>
+            </div>
     </section>
     <script>
-        const menuBtn=document.querySelector('.menu-btn');
-        const navlinks=document.querySelector('.nav-links');
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
 
-        menuBtn.addEventListener('click',()=>{
+        menuBtn.addEventListener('click', () => {
             navlinks.classList.toggle('mobile-btn');
         });
         let $root = $('html, body');
-      $('a[href^="#"]').click(function() {
-          let href = $.attr(this, 'href');
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function() {
-            window.location.hash = href;
-          });
-          return false;
+        $('a[href^="#"]').click(function () {
+            let href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
         });
     </script>
 
-    
+
 </body>
+
 </html>
