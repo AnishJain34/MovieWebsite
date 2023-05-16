@@ -2,31 +2,35 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="" <title>MovieWebsite</title>
+ <title>MovieWebsite</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <nav class="navbar">
-        <h1 class="logo">MOVIESHUB</h1>
+        <img width="50px"src="hello.jpg" alt="not therea">
+        
         <ul class="nav-links">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#link2" class="ctn">About</a></li>
             <li><a href="#">New</a></li>
-            <li>  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Type</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li class="dropdown-item" href="#">Action</li>
-                    <li class="dropdown-item" href="#">Another action</li>
-                    <li  class="dropdown-item" href="#">Something else here</li>
-                </ul></li>
-            <li><a href="#">Watchlist</a></li>
-            <li class="ctn" <a href="#"></a>Contact</li>
+            <li >Type<span class="fas fa-caret-down"></span>
+                <li><a href="#">Watchlist</a></li>
+            <li class="ctn" ><a href="#"></a>Contact</li>
         </ul>
         <img src="menu-btn.png" alt="illa mare" class="menu-btn">
+        <div class="search-w">
+            <div class="input-h">
+                <input type="text" class="search-in" placeholder="type to search"/>
+                <button class="search-ic" onclick="searchToggle(this,event);"><span></span></button>
+            </div>
+            <span class="close" onclick="searchToggle(this,event);"></span>
+        </div>
     </nav>
     <header>
         <div class="header-content">
