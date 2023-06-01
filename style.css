@@ -8,6 +8,9 @@
 
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
@@ -25,7 +28,18 @@ body,html{
     text-decoration: underline;
     font-weight: bold;
 }
-
+.input-h{
+    width:200px;
+    border:1px solid blue;
+    padding:8px;
+    border-radius: 30px;
+    background:white;
+}
+input{
+    
+    border:0px;
+    outline: 0px;
+}
 .navbar {
     position: absolute;
     top: 0;
@@ -64,8 +78,7 @@ header {
 
 .about-us{
     
-    height:100vh;
-    width:100%;
+ 
     padding:90px 0;
     background:#ddd;
 }
@@ -87,7 +100,7 @@ header {
 }
 .text h2{
     
-    font-size: 90px;
+    font-size: 50px;
     font-weight:600;
     margin-bottom: 10px;
 }
@@ -139,7 +152,7 @@ span{
     width: 150px;
     height: 4px;
     background: red;
-    margin: 10px auto;
+
     border-radius: 5px;
 }
 
@@ -219,7 +232,12 @@ p{
         left: 30px;
         color:red;
     }
+    .about-us{
+        width: 100%;
+       
 
+
+    }
     .nav-links {
         flex-direction: column;
         width: 100%;

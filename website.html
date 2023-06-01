@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>MovieWebsite</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
     <nav class="navbar">
-        <img width="50px"src="hello.jpg" alt="not therea">
+        
+       <h1 class="logo">MOVIES HUB</h1>
         
         <ul class="nav-links">
             <li class="active"><a href="#">Home</a></li>
@@ -26,7 +27,7 @@
         <img src="menu-btn.png" alt="illa mare" class="menu-btn">
         <div class="search-w">
             <div class="input-h">
-                <input type="text" class="search-in" placeholder="type to search"/>
+                <input type="text" class="search-in" placeholder="Search Movies"/>
                 <button class="search-ic" onclick="searchToggle(this,event);"><span></span></button>
             </div>
             <span class="close" onclick="searchToggle(this,event);"></span>
@@ -93,6 +94,68 @@
                 </div>
             </div>
     </section>
+    <footer>
+        
+        <div class="contact_us_8">
+            <div class="responsive-container-block container">
+              <form class="form-box">
+                <h1>Contact US</h1>
+                <div class="container-block form-wrapper">
+                  <div class="responsive-container-block">
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i10mt-9">
+                      <input class="input" id="ijowk-9" name="FirstName" placeholder="First Name">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="ieakm">
+                      <input class="input" id="indfi-7" name="Last Name" placeholder="Last Name">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="iajvf">
+                      <input class="input" id="ipmgh-9" name="Email" placeholder="Email">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i0txn">
+                      <input class="input" id="imgis-8" name="PhoneNumber" placeholder="Phone Number">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i634i-9">
+                      <textarea aria-placeholder="What’s on your mind?" class="textinput" id="i5vyy-9" placeholder="What’s on your mind?"></textarea>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12 checkbox-container" id="i634i-2-2">
+                    <div class="checkboc-container">
+                      <input id="i0m1w" type="checkbox">
+                        <h5>*Terms&conditions and service policy</h5>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i0txn-2">
+                    <button class="submit-btn">
+                      Submit
+                    </button>
+                  </div>
+                  <div class="right-side-text">
+                    <p class="text-blk contactus-head">
+                      Get in Touch
+                    </p>
+                    <p class="text-blk contactus-subhead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+                    </p>
+                    <div class="social-media-links">
+                      <a href="#" id="ix94i-2-3">
+                        <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+                      </a>
+                      <a href="#">
+                        <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+                      </a>
+                      <a href="#">
+                        <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+                      </a>
+                      <a href="#" id="izldf-2-3">
+                        <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+    </footer>
     <script>
         const menuBtn = document.querySelector('.menu-btn');
         const navlinks = document.querySelector('.nav-links');
